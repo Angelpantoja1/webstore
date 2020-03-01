@@ -1,0 +1,62 @@
+
+.packBack{
+    background-image: url("/assets/pictures/sky.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.top{
+    background-image: url("/assets/pictures/Sf.jpeg");
+    background-size: cover;
+}
+.middle{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+}
+.insideBack{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.reBack{
+    background-image: url("/assets/pictures/water2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.packBack{
+    background-image: url("/assets/pictures/sky.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.grey{
+    background-color:  opacify($color: grey, $amount: 1px);
+    height: 350px;
+    
+}
+.grey2{
+    background-color:  opacify($color: grey, $amount: 1px);
+    /* height: 350px; */
+    
+}
+.white{
+    color: white; 
+    background-color: black;
+
+}
+.packages{
+    background-color: black;
+    color: white;
+}
+.proBack{
+    background-image: url("/assets/pictures/tree2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.blacktxt{
+    opacity: 0;
+}

@@ -1,0 +1,152 @@
+.white{
+    color: white;
+}
+h2{
+    color: black;
+}
+.bgColor{
+    margin:0;
+    padding:0;
+}
+.hero-content{
+    position: absolute;
+    color: white;
+    top: 13rem;
+    left: 48rem; 
+}
+.hero-content2{
+    position: absolute;
+    color: white;
+    top: 25rem;
+    left: 38rem; 
+}
+.hero-content3{
+    position: absolute;
+    color: white;
+    top: 30rem;
+    left: 40rem; 
+}
+.hero-content4{
+    position: absolute;
+    color: white;
+    top: 45rem;
+    left: 50rem; 
+}
+.hero-content5{
+    position: absolute;
+    color: white;
+    top: 36rem;
+    left: 42rem; 
+}
+.hero-content6{
+    position: absolute;
+    color: white;
+    top: 50rem;
+    left: 53rem; 
+}
+.green{
+    background-color:#AEFFC1;
+}
+.packages{
+    background-color: black;
+    color: white;
+}
+.birthday{
+    background-color: blue;
+    color: white;
+}
+.family{
+    background-color: green;
+    color: black;
+}
+.maternity{
+    background-color: pink;
+    color: black;
+}
+.sports{
+    background-color: orange;
+    color: black;
+}
+.wedding{
+    background-color: turquoise;
+    color: black;
+}
+.custom{
+    background-color: purple;
+    color: white;
+}
+.birthBack{
+    background-image: url("/assets/img/weddingBackground3.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.grey{
+    background-color:  opacify($color: grey, $amount: 1px);
+    height: 350px;
+    
+}
+.grey2{
+    background-color:  opacify($color: grey, $amount: 1px);
+    /* height: 350px; */
+    
+}
+.white{
+    color: white; 
+    background-color: black;
+
+}
+.mar{
+    margin-top: 7rem;
+}
+
+.top{
+    background-image: url("/assets/pictures/Sf.jpeg");
+    background-size: cover;
+}
+.middle{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+}
+.insideBack{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.reBack{
+    background-image: url("/assets/pictures/water2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.packBack{
+    background-image: url("/assets/pictures/sky.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.proBack{
+    background-image: url("/assets/pictures/tree2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.grey{
+    background-color:  opacify($color: grey, $amount: 1px);
+    height: 350px;
+    
+}
+.blacktxt{
+    opacity: 0;
+}
+.grey2{
+    background-color:  opacify($color: grey, $amount: 1px);
+    /* height: 350px; */
+    
+}
+.white{
+    color: white; 
+    background-color: black;
+
+}

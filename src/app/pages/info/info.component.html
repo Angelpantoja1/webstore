@@ -1,0 +1,701 @@
+<!-- 
+<div class="row ml-0">
+    
+    <div class="col-11 pl-5 packages">
+        <img src="/assets/img/storeImages/black.jpg" width="100%" height="100%">
+    </div>
+    <div class="row hero-content">
+        <div class="col-12">
+            <h3>Lets get more Information!</h3>
+        </div>
+    </div>
+    <div class="row hero-content2">
+        <h3>Name:</h3><br>
+    </div>
+    <div class="row hero-content7">
+        <input #infoName placeholder="Enter your Name">
+    </div>
+    <div class="row hero-content3">
+        <h3>Date:</h3>
+    </div>
+    
+    <div class="row hero-content8">
+        <div class="ui-g-12 ui-md-4">
+            <input #infoDate>
+            <p-calendar placeholder="Please pick a date" [(ngModel)]="date10">
+                <ng-template pTemplate="date" let-date>
+                    <span [ngStyle]="{backgroundColor: (date.day < 21 && date.day > 10) ? '#81C784' : 'inherit'}"
+                        style="border-radius:50%;padding: .25em;width: 1.75em; height:1.75em; display:block;">{{date.day}}</span>
+                </ng-template>
+            </p-calendar>
+        </div>
+    </div>
+    <div class="row hero-content5">
+        <h3>Description:</h3>
+    </div>
+    <div class="row hero-content9">
+        <textarea #infoDesc class="height"
+            placeholder="Please enter a description of the event. What kind of things are going to happen at the event"></textarea>
+    </div>
+    <div class="row hero-content4">
+        <h3>Please Confirm:</h3>
+        <button (click)="setInfo(infoName.value, infoDate.value, infoDesc.value)" routerLink="/confirmation"
+            routerLinkActive="active" class="btn btn-primary">Confirm</button>
+    </div>
+
+</div> -->
+<div class="middle">
+    <div class="row packages">
+        <div class="col">
+            <h3 routerLink="/start-page"> Home</h3>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <p-sidebar [(visible)]="visibleSidebar4" [fullScreen]="true" [baseZIndex]="10000" class="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="/assets/pictures/hike3.jpeg" height="20%">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="d-flex justify-content-center slideUp" style="font-weight:normal">Welcome
+                        </h1>
+                        <div class="container">
+                            <h3 class="pt-5  pb-5 slideUp"> My name is Joseangel Pantoja but better known as
+                                Angel. I am a
+                                Photographer in the San Joaquin County. Im from stockon
+                                born and raised. Ive only been doing photography for about a year. I am 21 years
+                                old and I currently
+                                working on sharpening
+                                my skill set. It be great if we could together to make both our dreams come
+                                true! Dive through our
+                                packages and find which best
+                                suites you. Hopefully i'll be able to join you in captureing your special Day!
+                            </h3>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a routerLink="/portfolio"><button class="btn btn-dark">Portfolio</button></a>
+                                </div>
+                                <div class="col-4">
+                                    <a routerLink="/reviews"><button class="btn btn-dark">Reviews</button></a>
+                                </div>
+                                <div class="col-4">
+                                    <a routerLink="/packages"><button class="btn btn-dark">Packages</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-sidebar>
+
+            <h3 class="packages" (click)="visibleSidebar4 = true">About Me</h3>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <p-sidebar [(visible)]="visibleSidebar6" [fullScreen]="true" [baseZIndex]="10000" class="">
+                <div class="insideBack">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h1>Welcome to my Portfolio</h1>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h4>Check out some of my featured Shots! Maybe someday your photos could be here!</h4>
+                            </div>
+                        </div>
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="col-2">
+                                <h2>Birthday</h2>
+                                <ngb-carousel *ngIf="birthdaya">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[0]" alt="Random first slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[1]" alt="Random second slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[2]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[3]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[4]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[5]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[6]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="birthdaya[7]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                            <div class="col-2">
+                                <h2>Faimly</h2>
+                                <ngb-carousel *ngIf="family">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[0]" alt="Random first slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[1]" alt="Random second slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[2]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[3]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[4]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[5]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[6]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="family[7]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                            <div class="col-2">
+                                <h2>Maternity</h2>
+                                <ngb-carousel *ngIf="maternity">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[0]" alt="Random first slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[1]" alt="Random second slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[2]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[3]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[4]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[5]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[6]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="maternity[7]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                            <div class="col-2">
+                                <h2>Sports</h2>
+                                <ngb-carousel *ngIf="sports">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[0]" alt="Random first slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[1]" alt="Random second slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[2]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[3]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[4]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[5]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[6]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="sports[7]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                            <div class="col-2">
+                                <h2>Wedding</h2>
+                                <ngb-carousel *ngIf="wedding">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[0]" alt="Random first slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[1]" alt="Random second slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[2]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[3]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[4]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[5]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[6]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper">
+                                            <img [src]="wedding[7]" alt="Random third slide" width="100%">
+                                        </div>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                            <a routerLink="/portfolio">
+                                <h3>Jump to Portfolio</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--     <div class="row">
+                          <div class="col-lg-6">
+                              <img src="/assets/pictures/hike3.jpeg" height="20%">
+                          </div>
+                          <div class="col-lg-6">
+                              <h1 class="d-flex justify-content-center slideUp" style="font-weight:normal">Welcome
+                              </h1>
+                              <div class="container">
+                                  <h3 class="pt-5  pb-5 slideUp"> My name is Joseangel Pantoja but better known as
+                                      Angel. I am a
+                                      Photographer in the San Joaquin County. Im from stockon
+                                      born and raised. Ive only been doing photography for about a year. I am 21 years
+                                      old and I currently
+                                      working on sharpening
+                                      my skill set. It be great if we could together to make both our dreams come
+                                      true! Dive through our
+                                      packages and find which best
+                                      suites you. Hopefully i'll be able to join you in captureing your special Day!
+                                  </h3>
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-4">
+                                          <button class="btn btn-dark">Portfolio</button>
+                                      </div>
+                                      <div class="col-4">
+                                          <button class="btn btn-dark">Reviews</button>
+                                      </div>
+                                      <div class="col-4">
+                                          <button class="btn btn-dark">Packages</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> -->
+
+                <!-- <div class="row">
+                      <div class="col  d-flex justify-content-center pr-0 pl-0">
+                          <p-lightbox [images]="birthday"></p-lightbox>
+                      </div>
+                  </div> -->
+                <!-- <div class="row">
+                      <div class="col  d-flex justify-content-center pr-0 pl-0">
+                          <p-lightbox [images]="family"></p-lightbox>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col  d-flex justify-content-center pr-0 pl-0">
+                          <p-lightbox [images]="maternity"></p-lightbox>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col  d-flex justify-content-center pr-0 pl-0">
+                          <p-lightbox [images]="sports"></p-lightbox>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col  d-flex justify-content-center pr-0 pl-0">
+                          <p-lightbox [images]="wedding"></p-lightbox>
+                      </div>
+                  </div> -->
+            </p-sidebar>
+            <h3 class="packages" (click)="visibleSidebar6 = true">Portfolio</h3>
+        </div>
+        <!-- <a routerLink="/portfolio"> <h3 class="packages">Portfolio</h3></a> -->
+
+        <div class="col d-flex justify-content-center">
+            <p-sidebar [(visible)]="visibleSidebar5" [fullScreen]="true" [baseZIndex]="10000" class="">
+                <div class="reBack">
+                    <div class="container">
+                        <div class="row grey2">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h2>Howd we do?</h2>
+                            </div>
+                            <div class="col-12  d-flex justify-content-center">
+                                <h3>Please feel to check out and even leave a review!</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <app-products *ngIf="reviews"></app-products>
+                        </div>
+                        <div class="row">
+                            <a routerLink="/reviews">
+                                <h3>Jump to Reviews!</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p-sidebar>
+
+            <h3 class="packages" (click)="visibleSidebar5 = true">Reviews</h3>
+
+            <!-- <a routerLink="/reviews" ><h3 class="packages">Reviews</h3></a> -->
+        </div>
+        <div class="col d-flex justify-content-center">
+            <p-sidebar [(visible)]="visibleSidebar7" [fullScreen]="true" [baseZIndex]="10000" class="">
+                <div class="packBack">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h2>Package Delivered!</h2>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h3>Which package fits you?</h3>
+                            </div>
+                        </div>
+                        <div class="row  white">
+                            <div class="col-lg-12">
+                                <h4>Here we feature a wide variety of packages. We can do anywhere from Birthdays to
+                                    Weddings!
+                                    Every special day is importent to us, as well capturing every bright moment in
+                                    between. Come check
+                                    out a package and see which suits you.... nothing catching the eye? Try our Custom
+                                    Package!
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row  d-flex justify-content-center">
+                            <div class="col-lg-4  pt-5">
+                                <h4> Birthday Package</h4>
+                                <h5>Starting at $200/hr</h5>
+                                <!-- <h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- <a routerLink="/birthdays"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                            <div class="col-lg-4  pt-5">
+                                <h4> Family Package</h4>
+                                <h5>Starting at $400</h5>
+                                <!-- <h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- a routerLink="/family"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                            <div class="col-lg-4  pt-5">
+                                <h4> Maternity Package</h4>
+                                <h5>Starting at $300</h5>
+                                <!--<h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- <a routerLink="/maternity"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                            <div class="col-lg-4 pt-5">
+                                <h4> Sports Package</h4>
+                                <h5>Starting at $500</h5>
+                                <!-- <h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- <a routerLink="/sports"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                            <div class="col-lg-4  pt-5">
+                                <h4> Wedding Package</h4>
+                                <h5>Starting at $2,400</h5>
+                                <!-- <h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- <a routerLink="/wedding"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                            <div class="col-lg-4  pt-5">
+                                <h4> Custom Package</h4>
+                                <h5>Starting at $TBD</h5>
+                                <!--  <h6>Usb with Digital Images of your day</h6>
+                                  <h6>Online ordering of Gallery</h6>
+                                  <h6>Single location</h6> -->
+                                <!-- <a routerLink="/custom"><button class="btn btn-dark">Go to Package</button></a> -->
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <a routerLink="/packages">
+                                <h4>Jump to Packages</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p-sidebar>
+
+            <h3 class="packages" (click)="visibleSidebar7 = true">Packages</h3>
+            <!-- <a routerLink="/profile" ><h3 class="packages">Profile</h3></a> -->
+        </div>
+        <div class="col d-flex justify-content-center">
+            <p-sidebar [(visible)]="visibleSidebar8" [fullScreen]="true" [baseZIndex]="10000" class="">
+                <div class="proBack">
+                    <div class="container">
+                        <div class="row d-flex">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h3>Welcome to the Profile Page</h3>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center align-self-center">
+                                <a routerLink="/profile"><button class="btn btn-danger">
+                                        <h3>Jump to Profile</h3>
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-sidebar>
+
+            <h3 class="packages" (click)="visibleSidebar8 = true">Profile</h3>
+            <!-- <a routerLink="/profile" ><h3 class="packages">Profile</h3></a> -->
+        </div>
+    </div>
+</div>
+<div class="infoBack">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="white">Lets get more Information!</h3>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h3 class="white">Name:</h3><br>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <input #infoName placeholder="Enter your Name">
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h3 class="white">Date:</h3>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="ui-g-12 ui-md-4 d-flex justify-content-center">
+                <input #infoDate>
+                <p-calendar placeholder="Please pick a date" [(ngModel)]="date10">
+                    <ng-template pTemplate="date" let-date>
+                        <span [ngStyle]="{backgroundColor: (date.day < 21 && date.day > 10) ? '#81C784' : 'inherit'}"
+                            style="border-radius:50%;padding: .25em;width: 1.75em; height:1.75em; display:block;">{{date.day}}</span>
+                    </ng-template>
+                </p-calendar>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h3 class="white">Description:</h3>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <textarea #infoDesc class="height"
+                placeholder="Please enter a description of the event. What kind of things are going to happen at the event"></textarea>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h3 class="white">Please Confirm:</h3>
+            <button (click)="setInfo(infoName.value, infoDate.value, infoDesc.value)" routerLink="/confirmation"
+                routerLinkActive="active" class="btn btn-primary">Confirm</button>
+        </div>
+    </div>
+</div>

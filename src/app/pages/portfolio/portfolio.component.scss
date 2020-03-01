@@ -1,0 +1,127 @@
+h2{
+    color: black;
+}
+.hero-content{
+    position: absolute;
+    color: white;
+    top: 17rem;
+    left: 51rem; 
+}
+.hero-content2{
+    position: absolute;
+    color: white;
+    top: 25rem;
+    left: 45rem; 
+}
+.hero-content3{
+    position: absolute;
+    color: white;
+    top: 30rem;
+    left: 47rem; 
+}
+.hero-content4{
+    position: absolute;
+    color: white;
+    top: 38rem;
+    left: 51rem; 
+}
+.hero-content5{
+    position: absolute;
+    color: white;
+    top: 34rem;
+    left: 50rem; 
+}
+.hero-content6{
+    position: absolute;
+    color: white;
+    top: 44rem;
+    left: 53rem; 
+}
+.green{
+    background-color:#AEFFC1;
+}
+.packages{
+    background-color: black;
+    color: white;
+}
+.birthday{
+    background-color: blue;
+    color: white;
+}
+.family{
+    background-color: green;
+    color: black;
+}
+.maternity{
+    background-color: pink;
+    color: black;
+}
+.sports{
+    background-color: orange;
+    color: black;
+}
+.wedding{
+    background-color: turquoise;
+    color: black;
+}
+.custom{
+    background-color: purple;
+    color: white;
+}
+
+.insideBack{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.top{
+    background-image: url("/assets/pictures/Sf.jpeg");
+    background-size: cover;
+}
+.middle{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+}
+.insideBack{
+    background-image: url("/assets/pictures/Sf3.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.reBack{
+    background-image: url("/assets/pictures/water2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+.packBack{
+    background-image: url("/assets/pictures/sky.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.proBack{
+    background-image: url("/assets/pictures/tree2.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.blacktxt{
+    opacity: 0;
+}
+
+.grey{
+    background-color:  opacify($color: grey, $amount: 1px);
+    height: 350px;
+    
+}
+.grey2{
+    background-color:  opacify($color: grey, $amount: 1px);
+    /* height: 350px; */
+    
+}
+.white{
+    color: white; 
+    background-color: black;
+
+}

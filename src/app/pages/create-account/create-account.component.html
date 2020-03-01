@@ -1,0 +1,77 @@
+<div id="hero"></div>
+<div class="container">
+    <div class="row">
+        <div class="hero-content2">
+            <h1>Create your free Account!</h1>
+        </div>
+        <div class="hero-content3">
+            <!--  <legend> User Form</legend> -->
+            <!--     [formGroup]="userForm"
+            id="uName" formControlName="uName"
+            id="fName" formControlName="fName"
+            id="lName" formControlName="lName"
+            id="email" formControlName="email"
+            formGroupName="passwordGroup"
+            id="password" formControlName="password"
+            id="confirmPassword"
+            formControlName="confirmPassword" -->
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input #uN type="email" class="form-control" aria-describedby="emailHelp" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input #fN type="email" class="form-control" aria-describedby="emailHelp" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input #lN type="email" class="form-control" aria-describedby="emailHelp" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input #email type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.
+                </small>
+                <div>
+                    <!-- <div class="form-group"> -->
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="exampleInputPassword1">Password</label>
+                        </div>
+                        <div class="row">
+                            <!-- <input #pass pPassword type="password"/> -->
+                            <input #pass pPassword type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input #cPass type="password" class="form-control" placeholder="ConfirmPassword">
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <button (click)='signUp(uN.value,fN.value,lN.value, email.value, pass.value,cPass.value)'
+                    type="submit" class="btn btn-danger">Validate</button>
+                <a routerLink="/start-page" routerLinkActive="active"><button
+                        (click)='setLogin(uN.value,fN.value,lN.value, email.value, pass.value,cPass.value)'
+                        class="btn btn-dark">Sign
+                        In</button>
+                </a>
+            </form>
+            <!--  -->
+        </div>
+        <!-- <div>
+            {{userForm.value | json}}
+            <div> Dirty: {{userForm.dirty}}</div>
+            <div> Touched: {{userForm.touched}}</div>
+            <div> Pristine: {{userForm.pristine}}</div>
+            <div> Valid: {{userForm.valid}}</div>
+            <div> First Name Touched: {{userForm.get('fName').touched}}</div>
+            <div> First Name Dirty: {{userForm.get('fName').dirty}}</div>
+            <div> First Name Valid: {{userForm.get('fName').valid}}</div>
+        </div> -->
+    </div>
+</div>

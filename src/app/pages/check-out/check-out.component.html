@@ -1,0 +1,80 @@
+<div class="row">
+    <div class="col-2">
+        <img src="/assets/img/AP_Photography_v4.png" width="75%" height="100%">
+    </div>
+    <div class="col-1 d-flex align-items-center">
+        <a routerLink="/reviews" rounterLinkActive="active">
+            <h2>Reviews</h2>
+        </a>
+    </div>
+    <div class="col-6 d-flex justify-content-center align-items-center">
+        <a routerLink="/start-page" rounterLinkActive="active">
+            <h2><i>Angel Pantoja Photography</i></h2>
+        </a>
+    </div>
+    <div class="col-1 d-flex align-items-center justify-content-end">
+        <a routerLink="/portfolio" rounterLinkActive="active">
+            <h2 class="packages">Portfolio</h2>
+        </a>
+    </div>
+    <div class="col-1 d-flex align-items-center justify-content-end">
+        <a routerLink="/profile" rounterLinkActive="active"><h4>{{loginInfo.fName}}</h4></a>
+    </div>
+</div>
+<div class="row ml-0">
+    <div class="col-1">
+        <div ngbDropdown class="d-inline-block">
+            <!-- <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><h3>Packages</h3></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <a><button ngbDropdownItem routerLink="/birthdays" >Birthdays</button></a>
+                <button ngbDropdownItem routerLink="/family">Family</button>
+                <button ngbDropdownItem routerLink="/maternity">Maternity</button>
+                <button ngbDropdownItem routerLink="/sports">Sports</button>
+                <button ngbDropdownItem routerLink="/wedding">Wedding</button>
+                <button ngbDropdownItem routerLink="/custom">Custom</button>
+            </div>
+        </div> -->
+        <div class="row packages" routerLink="/start-page">
+            <h3>Packages</h3>
+        </div>
+        <div class="row birthday"  routerLink="/birthdays">
+            <h3 class=" pt-3">Birthdays</h3>
+        </div>
+        <div class="row family" routerLink="/family">
+            <h3 class=" pt-3">Family</h3>
+        </div>
+        <div class="row maternity" routerLink="/maternity">
+            <h3 class=" pt-3">Maternity</h3>
+        </div>
+        <div class="row sports" routerLink="/sports">
+            <h3 class=" pt-3">Sports</h3>
+        </div>
+        <div class="row wedding" routerLink="/wedding">
+            <h3 class=" pt-3">Wedding</h3>
+        </div>
+        <div class="row custom" routerLink="/custom">
+            <h3 class=" pt-3">Custom</h3>
+        </div>
+    </div>
+    <div class="col-11 pl-5">
+        <img src="/assets/img/storeImages/black.jpg" width="100%" height="800vh">
+    </div>
+    <div class="row hero-content">
+        <h1>Check Out</h1>
+    </div>
+    <div class="row border">
+        <div class="col-4 hero-content2">
+            <h3>Name of Packages</h3>
+        </div>
+        <div class="col-4 hero-content3">
+            <h3>Description</h3>
+        </div>
+        <div class="col-4 hero-content4">
+            <h3>Price</h3>
+        </div>
+    </div>
+    <a routerLink="/pay" rounterLinkActive="active">
+        <button type="submit" class="btn btn-primary hero-content5"><h3>Check out</h3></button>
+    </a>
+
+</div>

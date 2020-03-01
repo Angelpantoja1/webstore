@@ -1,0 +1,42 @@
+<div id="hero"></div>
+<div class="container">
+    <div class="row">
+        <div class="hero-content2">
+            <h1>Check Out</h1>
+        </div>
+        <div class="hero-content3">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input #nPay type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input #ePay type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Number</label>
+                    <input #numPay type="password" class="form-control" id="exampleInputPassword1" placeholder="Number">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Card Info</label>
+                    <input #cardInfo type="password" class="form-control" id="exampleInputPassword1" placeholder="Card Info">
+                </div>
+                <div class="form-group">
+                    <form #form="ngForm">
+                        <label for="cc" style="display:block;margin-bottom:4px">Credit Card</label>
+                        <input id="cc" type="text" name="cc" [(ngModel)]="cc" pInputText [pKeyFilter]="ccRegex" [pValidateOnly]="true" placeholder="1234-1234-1234-1234" style="margin-right: .5em">
+                        <!-- <p-message severity="error" text="Not a valid number" [@errorState]="form.dirty && !form.valid ? 'visible' : 'hidden'"></p-message> -->
+                    </form>
+                    <!-- <label for="exampleInputPassword1">CVV</label>
+                    <input #cvv type="password" class="form-control" id="exampleInputPassword1" placeholder="CVV"> -->
+                </div>
+                <a routerLink="/thank-you" routerLinkActive="active"><button type="submit" class="btn btn-primary">Check Out</button></a>
+            </form>
+        </div>
+    </div>
+</div>

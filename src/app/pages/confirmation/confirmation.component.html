@@ -1,0 +1,158 @@
+<!-- <div class="row packages">
+    <div class="col-2">
+        <img src="/assets/img/AP_Photography_v4.png" width="75%" height="100%">
+    </div>
+    <div class="col-1 d-flex align-items-center">
+        <a routerLink="/reviews" rounterLinkActive="active">
+            <h2 class="packages">Reviews</h2>
+        </a>
+    </div>
+    <div class="col-6 d-flex justify-content-center align-items-center">
+        <a routerLink="/start-page" rounterLinkActive="active">
+            <h2 class="packages"><i>Angel Pantoja Photography</i></h2>
+        </a>
+    </div>
+    <div class="col-1 d-flex align-items-center justify-content-end">
+        <a routerLink="/portfolio" rounterLinkActive="active">
+            <h2 class="packages">Portfolio</h2>
+        </a>
+    </div>
+    <div class="col-1 d-flex align-items-center justify-content-end">
+        <a routerLink="/profile" rounterLinkActive="active">
+            <h4 class="packages">{{loginInfo.fName}}</h4>
+        </a>
+    </div>
+</div>
+<div class="row ml-0 black">
+    <div class="col-1 packages"> -->
+<!-- <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><h3>Packages</h3></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <a><button ngbDropdownItem routerLink="/birthdays" >Birthdays</button></a>
+                <button ngbDropdownItem routerLink="/family">Family</button>
+                <button ngbDropdownItem routerLink="/maternity">Maternity</button>
+                <button ngbDropdownItem routerLink="/sports">Sports</button>
+                <button ngbDropdownItem routerLink="/wedding">Wedding</button>
+                <button ngbDropdownItem routerLink="/custom">Custom</button>
+            </div>
+        </div> -->
+<!--  <div class="row packages" routerLink="/start-page">
+            <h3>Packages</h3>
+        </div>
+        <div class="row birthday" routerLink="/birthdays">
+            <h3 class=" pt-3">Birthdays</h3>
+        </div>
+        <div class="row family" routerLink="/family">
+            <h3 class=" pt-3">Family</h3>
+        </div>
+        <div class="row maternity" routerLink="/maternity">
+            <h3 class=" pt-3">Maternity</h3>
+        </div>
+        <div class="row sports" routerLink="/sports">
+            <h3 class=" pt-3">Sports</h3>
+        </div>
+        <div class="row wedding" routerLink="/wedding">
+            <h3 class=" pt-3">Wedding</h3>
+        </div>
+        <div class="row custom" routerLink="/custom">
+            <h3 class=" pt-3">Custom</h3>
+        </div>
+    </div>
+    <div class="col-11 pl-5 packages">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="d-flex justify-content-center">Confirm</h3>
+            </div>
+            <div class="col-lg-4">
+                <h3>Name of Package</h3>
+                <h4 class="slideUp">{{packageInfo.pName}}</h4>
+                <h4 class="slideUp">{{packageInfo.price}}</h4>
+            </div>
+            <div class="col-lg-4">
+                <h3>Name</h3>
+                <h3 class="slideUp">{{Info.Iname}}</h3>
+            </div>
+            <div class="col-lg-4">
+                <h3>Date</h3>
+                <h3 class="slideUp">{{Info.Idate}}</h3>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4"> -->
+<!-- <h3>{{packages[i].pName}}</h3> -->
+<!-- </div>
+            <div class="col-lg-4"> -->
+<!-- <h3>{{packages[i].price}}</h3> -->
+<!-- </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-6 pt-5 mt-5">
+                <h3>Description:</h3>
+            </div>
+            <div class="col-lg-6 pt-5 mt-5">
+                <h3 class="slideUp">{{Info.Idesc}}</h3>
+            </div>
+        </div>
+        <div class="row mb-5">
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h3>Check Out</h3>
+                <button routerLink="/pay" rounterLinkActive="active" class="btn btn-primary">Pay</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- *ngFor='let cItem of itemsInCart' -->
+
+
+<div class="infoBack">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="d-flex justify-content-center whitete">Confirm</h1>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="white">Name of Package</h3>
+            <h3 class="slideUp white">{{packageInfo.pName}}</h3>
+            <h3 class="slideUp white">{{packageInfo.price}}</h3>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="white">Name</h3>
+            <h3 class="slideUp white">{{Info.Iname}}</h3>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="white">Date</h3>
+            <h3 class="slideUp white">{{Info.Idate}}</h3>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+            <!-- <h3>{{packages[i].pName}}</h3> -->
+        </div>
+        <div class="col-lg-4">
+            <!-- <h3>{{packages[i].price}}</h3> -->
+        </div>
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+            <h3 class="white">Description:</h3>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+            <h3 class="slideUp white">{{Info.Idesc}}</h3>
+        </div>
+    </div>
+    <div class="row mb-5">
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <h3 class="white">Check Out</h3>
+            <button routerLink="/pay" rounterLinkActive="active" class="btn btn-primary">Pay</button>
+        </div>
+    </div>
+</div>
+
+
